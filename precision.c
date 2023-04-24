@@ -5,7 +5,7 @@
  * @format: Formatted string in which to print the arguments
  * @i: List of arguments to be printed.
  * @list: list of arguments.
- *
+ * is _digit - check whether the character is a digit or not
  * Return: Precision.
  */
 int get_precision(const char *format, int *i, va_list list)
