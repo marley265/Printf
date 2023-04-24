@@ -20,7 +20,7 @@
 
 /**
  * struct fmt - Struct op
- * by Joseph and Ciny
+ * by Jackson and Adolphe
  *
  * @fmt: The format.
  * @fn: The function associated.
@@ -116,3 +116,4 @@ long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
 #endif
+
