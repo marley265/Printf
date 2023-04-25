@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- *
+ * Team project
  * Return: Always 0
  */
 
