@@ -31,6 +31,10 @@ int _printf(const char *, ...);
 int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
 
+/* write_funcs */
+int _putchar(char c);
+int _puts(char *str);
+
 /* print_custom */
 int print_rot13(va_list l, flags_t *f);
 int print_rev(va_list l, flags_t *f);
