@@ -1,6 +1,5 @@
 #include "main.h"
 
-<<<<<<< HEAD
 void print_buffer(char buffer[], int *buff_ind);
 /**
  * _printf - Printf function
@@ -61,33 +60,3 @@ void print_buffer(char buffer[], int *buff_ind)
 	if (*buff_ind > 0)
 		write(1, &buffer[0], *buff_ind);
 	*buff_ind = 0;
-=======
-/**
- * _printf - Produces output according to a format
- * @format: Is a character string. The format string
- * is composed of zero or more directives
- *
- * Return: The number of characters printed (excluding
- * the null byte used to end output to strings)
- **/
-int _printf(const char *format, ...)
-{
-	int size;
-	va_list args;
-
-	if (format == NULL)
-		return (-1);
-
-	size = _strlen(format);
-	if (size <= 0)
-		return (0);
-
-	va_start(args, format);
-	size = handler(format, args);
-
-	_putchar(-1);
-	va_end(args);
-
-	return (size);
->>>>>>> origin
-}
