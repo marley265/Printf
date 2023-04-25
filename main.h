@@ -47,4 +47,4 @@ typedef struct _format
 } format;
 
 
-#endif /* MAIN_H */
+#endif
