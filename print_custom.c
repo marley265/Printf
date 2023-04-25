@@ -17,6 +17,7 @@ int print_bigS(va_list l, flags_t *f)
 	char *s = va_arg(l, char *);
 
 	(void)f;
+
 	if (!s)
 		return (_puts("(null)"));
 
