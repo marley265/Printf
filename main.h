@@ -27,6 +27,9 @@ char *itoa(long int, int);
 /* printf.c */
 int _printf(const char *, ...);
 
+/* converter */
+char *convert(unsigned long int num, int base, int lowercase);
+
 /* handler.c */
 int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
