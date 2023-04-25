@@ -17,6 +17,11 @@ int _printf(const char *, ...);
 int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
 
+/* print_custom */
+int print_rot13(va_list l, flags_t *f);
+int print_rev(va_list l, flags_t *f);
+int print_bigS(va_list l, flags_t *f);
+
 /* printers */
 int print_string(va_list);
 int print_char(va_list);
