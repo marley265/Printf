@@ -19,13 +19,35 @@ typedef struct flags
 	int hash;
 } flags_t;
 
+/**
+ * struct printHandler - struct to choose the right function depending
+ * on the format specifier passed to _printf()
+ * @c: format specifier
+ * @f: pointer to the correct printing function
+ */
+typedef struct printHandler
+{
+	char c;
+	int (*f)(va_list ap, flags_t *f);
+} ph;
+
 /* utils.c */
 int _strlen(const char *);
 int print(char *);
 char *itoa(long int, int);
 
+/* print_alpha */
+int print_string(va_list l, flags_t *f);
+int print_char(va_list l, flags_t *f);
+
 /* printf.c */
 int _printf(const char *, ...);
+
+/* print_percent */
+int print_percent(va_list l, flags_t *f);
+
+/* print_address */
+int print_address(va_list l, flags_t *f);
 
 /* converter */
 char *convert(unsigned long int num, int base, int lowercase);
@@ -59,6 +81,15 @@ int print_hexadecimal_upp(va_list);
 int print_pointer(va_list);
 int print_rev_string(va_list);
 
+/* get_print */
+int (*get_print(char s))(va_list, flags_t *);
+
+/* print_nums */
+int print_int(va_list l, flags_t *f);
+void print_number(int n);
+int print_unsigned(va_list l, flags_t *f);
+int count_digit(int i);
+
 /* _putchar.c */
 int _putchar(char);
 int buffer(char);
@@ -74,6 +105,5 @@ typedef struct _format
 	char type;
 	int (*f)(va_list);
 } format;
-
 
 #endif
