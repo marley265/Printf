@@ -36,10 +36,6 @@ int _strlen(const char *);
 int print(char *);
 char *itoa(long int, int);
 
-/* print_alpha */
-int print_string(va_list l, flags_t *f);
-int print_char(va_list l, flags_t *f);
-
 /* printf.c */
 int _printf(const char *, ...);
 
@@ -84,7 +80,6 @@ int (*get_print(char s))(va_list, flags_t *);
 /* print_nums */
 int print_int(va_list l, flags_t *f);
 void print_number(int n);
-int print_unsigned(va_list l, flags_t *f);
 int count_digit(int i);
 
 /* _putchar.c */
