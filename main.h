@@ -50,7 +50,6 @@ char *convert(unsigned long int num, int base, int lowercase);
 
 /* handler.c */
 int handler(const char *, va_list);
-int percent_handler(const char *str, va_list list, int *i)
 
 /* write_funcs */
 int _putchar(char c);
