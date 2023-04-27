@@ -48,9 +48,6 @@ int print_address(va_list l, flags_t *f);
 /* converter */
 char *convert(unsigned long int num, int base, int lowercase);
 
-/* handler.c */
-int handler(const char *, va_list);
-
 /* write_funcs */
 int _putchar(char c);
 int _puts(char *str);
