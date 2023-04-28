@@ -40,6 +40,8 @@ typedef struct printHandler
 	int (*f)(va_list ap, flags_t *f);
 } ph;
 
+int get_size(const char *format, int *i);
+
 /* utils.c */
 int _strlen(const char *);
 int print(char *);
