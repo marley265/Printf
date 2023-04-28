@@ -14,6 +14,9 @@
 #define F_HASH 8
 #define F_SPACE 16
 
+#define S_LONG 2
+#define S_SHORT 1
+
 /**
  * struct flags - struct containing flags to "turn on"
  * when a flag specifier is passed to _printf()
