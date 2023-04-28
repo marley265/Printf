@@ -14,6 +14,9 @@
 #define F_HASH 8
 #define F_SPACE 16
 
+#define S_LONG 2
+#define S_SHORT 1
+
 /**
  * struct flags - struct containing flags to "turn on"
  * when a flag specifier is passed to _printf()
@@ -41,6 +44,9 @@ typedef struct printHandler
 } ph;
 
 int get_size(const char *format, int *i);
+int get_flags(const char *format, int *i);
+int get_width(const char *format, int *i, va_list list);
+int get_precision(const char *format, int *i, va_list list);
 
 /* utils.c */
 int _strlen(const char *);
