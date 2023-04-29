@@ -48,7 +48,7 @@ int get_flags(const char *format, int *i);
 int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
 
-int handle_print(const char *fmt, int *i);
+int handle_print(format, &i, list, buffer, flags, width, precision, size);
 
 /* utils.c */
 int _strlen(const char *);
